@@ -68,7 +68,7 @@ if __name__ == "__main__":
                 print("Listening...")
                 audio = recognizer.listen(source, timeout=2, phrase_time_limit=1) 
             word = recognizer.recognize_google(audio)
-            if word.lower() == "hello":  # Say "hello" to activate Jarvis
+            if word.lower() == "jarvis":  # Say "jarvis" to activate Jarvis
                 speak("Yes?")
                 # Listen for command
                 with sr.Microphone() as source:
